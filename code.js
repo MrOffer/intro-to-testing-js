@@ -18,3 +18,7 @@ function isFive(x) {
 function isEven(x) {
     return parseFloat(x) % 2 === 0;
 }
+
+function isVowel(vow) {
+    return vow === "a" || vow === "e" || vow === "i" || vow === "o" || vow === "u" || vow === "A" || vow === "E" || vow === "I" || vow === "O" || vow === "U";
+}
