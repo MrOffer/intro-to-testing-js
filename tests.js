@@ -41,3 +41,53 @@ describe("sayHello", function () {
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
+
+describe("isFive", function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe("function")
+    });
+    it('should return a Boolean when called upon', function () {
+        expect(typeof isFive()).toBe("boolean")
+    });
+    it('should return true when 5 is passed', function () {
+        expect(isFive(5)).toBe(true)
+    });
+    it('should return false when "5" is passed', function () {
+        expect(isFive("5")).toBe(false)
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+//- Assert that isEven:
+//    - returns a boolean no matter the input
+//- returns true when executed with `isEven(2)`
+//- returns true when executed with `isEven(-4)`
+//- returns false when executed with `isEven(3)`
+//- returns false when called with `isEven("banana")`
+//- returns true when called with `isEven("8")`
+//- returns false when called with `isEven(Infinity)`
+//- return false when called with a boolean input like `isEven(true)` or `isEven(false)`
+//- returns false when called without an argument like `isEven()`
+
+describe("isEven", function () {
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe("function");
+    });
+    it('should return a boolean no matter the input', function () {
+
+    });
+
+
+
+
+
+});
