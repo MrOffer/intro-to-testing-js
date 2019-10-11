@@ -15,6 +15,6 @@ function isFive(x) {
     return x === 5;
 }
 
-function isEven() {
-
+function isEven(x) {
+    return parseFloat(x) % 2 === 0;
 }
