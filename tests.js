@@ -44,16 +44,16 @@ describe("sayHello", function () {
 
 describe("isFive", function () {
     it('should be a defined function', function () {
-        expect(typeof isFive).toBe("function")
+        expect(typeof isFive).toBe("function");
     });
     it('should return a Boolean when called upon', function () {
-        expect(typeof isFive()).toBe("boolean")
+        expect(typeof isFive()).toBe("boolean");
     });
     it('should return true when 5 is passed', function () {
-        expect(isFive(5)).toBe(true)
+        expect(isFive(5)).toBe(true);
     });
     it('should return false when "5" is passed', function () {
-        expect(isFive("5")).toBe(false)
+        expect(isFive("5")).toBe(false);
     });
 });
 
@@ -63,35 +63,35 @@ describe("isEven", function () {
         expect(typeof isEven).toBe("function");
     });
     it('should return a boolean no matter the input', function () {
-        expect(typeof isEven()).toBe("boolean")
+        expect(typeof isEven()).toBe("boolean");
     });
     it('should return true when executed with 2', function () {
-        expect(isEven(2)).toBe(true)
+        expect(isEven(2)).toBe(true);
     });
     it('should return true when executed with -4', function () {
-        expect(isEven(-4)).toBe(true)
+        expect(isEven(-4)).toBe(true);
     });
     it('should be false when executed with 3', function () {
-        expect(isEven(3)).toBe(false)
+        expect(isEven(3)).toBe(false);
     });
     it('should be false when executed with banana', function () {
-        expect(isEven("banana")).toBe(false)
+        expect(isEven("banana")).toBe(false);
     });
     it('should be false when executed with 8', function () {
-        expect(isEven(8)).toBe(true)
+        expect(isEven(8)).toBe(true);
     });
     it('should be false when executed with Infinity', function () {
-        expect(isEven(Infinity)).toBe(false)
+        expect(isEven(Infinity)).toBe(false);
     });
     it('should be false when executed with 3', function () {
-        expect(isEven(3)).toBe(false)
+        expect(isEven(3)).toBe(false);
     });
     it('should be false when executed with true of false', function () {
-        expect(isEven(true)).toBe(false)
-        expect(isEven(false)).toBe(false)
+        expect(isEven(true)).toBe(false);
+        expect(isEven(false)).toBe(false);
     });
     it('should be false when executed with "', function () {
-        expect(isEven()).toBe(false)
+        expect(isEven()).toBe(false);
     });
 });
 
@@ -101,28 +101,58 @@ describe("isVowel", function () {
         expect(typeof isVowel).toBe("function");
     });
     it('should return a boolean no matter the input', function () {
-        expect(typeof isVowel()).toBe("boolean")
+        expect(typeof isVowel()).toBe("boolean");
     });
     it('should return true when execute a', function () {
-        expect(isVowel("a")).toBe(true)
+        expect(isVowel("a")).toBe(true);
     });
     it('should return true when execute A', function () {
-        expect(isVowel("A")).toBe(true)
+        expect(isVowel("A")).toBe(true);
     });
     it('should return true when execute y', function () {
-        expect(isVowel("y")).toBe(false)
+        expect(isVowel("y")).toBe(false);
     });
     it('should return true when execute 4', function () {
-        expect(isVowel(4)).toBe(false)
+        expect(isVowel(4)).toBe(false);
     });
     it('should return true when execute true or false', function () {
-        expect(isVowel(true)).toBe(false)
-        expect(isVowel(false)).toBe(false)
+        expect(isVowel(true)).toBe(false);
+        expect(isVowel(false)).toBe(false);
     });
     it('should return true when execute banana', function () {
-        expect(isVowel("banana")).toBe(false)
+        expect(isVowel("banana")).toBe(false);
     });
     it('should return true when execute ""', function () {
-        expect(isVowel()).toBe(false)
+        expect(isVowel()).toBe(false);
+    });
+});
+
+describe("add", function () {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe("function");
+    });
+    it('should return a number as long as both inputs are numbers or strings containing numbers.', function () {
+        expect(typeof add()).toBe("number");
+    });
+    it('should return 5 when execute 2, 3', function () {
+        expect(add(2, 3)).toBe(5);
+    });
+    it('should return -12 when execute -3, -9', function () {
+        expect(add(-3, -9)).toBe(-12);
+    });
+    it('should return 11 when execute "5", 6', function () {
+        expect(add("5", 6)).toBe(11);
+    });
+    it('should return 6 when execute "-4", "10"', function () {
+        expect(add("-4", "10")).toBe(6);
+    });
+    it('should return NaN when execute "banana", "split"', function () {
+        expect(add("banana", "split")).toBe(NaN);
+    });
+    it('should return NaN when execute 2, "apples"', function () {
+        expect(add(2, "apples")).toBe(NaN);
+    });
+    it('should return Nan when execute add()', function () {
+        expect(add()).toBe(NaN);
     });
 });

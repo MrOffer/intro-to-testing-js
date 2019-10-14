@@ -22,3 +22,7 @@ function isEven(x) {
 function isVowel(vow) {
     return vow === "a" || vow === "e" || vow === "i" || vow === "o" || vow === "u" || vow === "A" || vow === "E" || vow === "I" || vow === "O" || vow === "U";
 }
+
+function add(x, y) {
+    return x + y;
+}
