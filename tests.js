@@ -152,7 +152,7 @@ describe("add", function () {
     it('should return NaN when execute 2, "apples"', function () {
         expect(add(2, "apples")).toBe(NaN);
     });
-    it('should return Nan when execute add()', function () {
+    it('should return NaN when execute add()', function () {
         expect(add()).toBe(NaN);
     });
 });
