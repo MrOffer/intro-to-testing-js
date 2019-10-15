@@ -147,12 +147,12 @@ describe("add", function () {
         expect(add("-4", "10")).toBe(6);
     });
     it('should return NaN when execute "banana", "split"', function () {
-        expect(add("banana", "split")).toBe(NaN);
+        expect(add("banana", "split")).toBeNaN();
     });
     it('should return NaN when execute 2, "apples"', function () {
-        expect(add(2, "apples")).toBe(NaN);
+        expect(add(2, "apples")).toBeNaN();
     });
     it('should return NaN when execute add()', function () {
-        expect(add()).toBe(NaN);
+        expect(add()).toBeNaN();
     });
 });
